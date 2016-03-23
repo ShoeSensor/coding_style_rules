@@ -35,8 +35,11 @@ To write your documentation in doxygen style, follow the following guide:
 #### Set eclipse to use doxygen style documentation
 Go to **Window -> Preferences -> C/C++ -> Editor -> Documentation tool comments **
 Select *Doxygen* in the **workspace default** choicebox.
-After this, eclipse automatically generates a part of the doxygen documentation for you. To do this, put the cursor on the line above a function and type:
-`**/` followed by enter.
+After this, eclipse automatically generates a part of the doxygen documentation for you.
+
+To do this, put the cursor on the line above a function and type:
+
+`/**` followed by enter.
 Now it should look like this:
 ```language
 /**
@@ -77,10 +80,15 @@ Files should always end with:
 ###### Function identifiers
 
 `@brief` : Used to give a brief description of the function.
+
 `@details`: Used to give a details description about the function.
+
 `@param x`: Used to give a explain the parameter with name *x*.
+
 `@return`: Used to explain the return value.
+
 `@retval`: Descripe a specific return value e.g. `true` and `false`.
+
 `@note`: Additional about the function.
 
 ###### Structures and enums
@@ -100,6 +108,7 @@ Note that `/**<` is very important.
 ## Eclipse auto formatter
 
 The eclipse formatter is a great tools and it almost does what we want. To configure the eclipse formatter to our needs, import the configuration file. The configuration file is called `formatter_conf.xml` and is located in this repository.
+
 To import this file go to: ** Window -> Preferences -> Formatter -> Import... ** and choose this file. Downloads the file first if you haven't already.
 What this does, it changes tabs to spaces and creates brackets for functions on a new line.
 
